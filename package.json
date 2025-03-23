@@ -1,0 +1,38 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server,js",
+  "author": "RAtabayev",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "watch-config": "chokidar 'vite.config.*' -c 'yarn build && yarn preview'",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "nurbank": "vite build --watch --mode development"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "chokidar-cli": "^3.0.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "eslint": "^8.45.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-standard": "^5.0.0",
+    "sass": "^1.63.0",
+    "sass-embedded": "^1.85.1",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0"
+  }
+}
